@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useContext } from "react";
 
 //Import Files
 import { HeaderS } from "./style";

@@ -32,7 +32,7 @@ export default function Header() {
                         <h2 style={{
                             color: `${currentBackground.color}`
                         }}>
-                            Logo
+                            Países
                         </h2>
 
                     </div>

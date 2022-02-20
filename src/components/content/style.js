@@ -1,9 +1,10 @@
 import Style from "styled-components";
 
 export const Section = Style.section `
-    padding-top: 15px;
+    padding: 15px 0 70px 0;
     width: 100%;
     transition: .3s ease-in-out;
+    z-index: 10;
 
     p {
         margin-bottom: 15px;

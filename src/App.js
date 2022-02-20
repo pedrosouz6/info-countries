@@ -4,6 +4,7 @@ import { ContextTheme } from "./context/context";
 import Header from "./components/header/header"; 
 import Filter from "./components/filter/filter";
 import Content from "./components/content/content";
+import Footer from "./components/footer/index";
 
 export default function App() {
 
@@ -36,6 +37,8 @@ export default function App() {
           <p style={{textAlign: "center", marginTop: "15px"}}>Escolha o país acima para obter informações sobre o mesmo!</p>
         </div>
       ) : <Content/>}
+
+      <Footer/>
       
 
     </ContextTheme.Provider>

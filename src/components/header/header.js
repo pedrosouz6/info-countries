@@ -1,16 +1,17 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 //Import Files
 import { HeaderS } from "./style";
 import { Theme } from "../../theme/theme";
+import { ContextTheme } from "../../context/context";
 
 export default function Header() {
+
+    const { theme, setTheme } = useContext(ContextTheme);
 
     //Themes
     const themeLight = Theme.light;
     const themeDark = Theme.dark;
-
-    const [ theme, setTheme ] = useState(false);
 
     const ChoiseTheme = () => {
         setTheme(!theme);

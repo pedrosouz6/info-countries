@@ -1,6 +1,6 @@
 import Style from "styled-components";
 
-const transition = ".3s ease-in-out"
+const transition = ".3s ease-in-out";
 
 export const HeaderS = Style.header `
     width: 100%;

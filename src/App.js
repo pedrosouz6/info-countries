@@ -31,7 +31,11 @@ export default function App() {
 
       <Header/>
       <Filter/>
-      {country == 'null' || country < 0 ? "Erro" : <Content/>}
+      {country == 'null' || country < 0 ? (
+        <div className="center">
+          <p style={{textAlign: "center", marginTop: "15px"}}>Escolha o país acima para obter informações sobre o mesmo!</p>
+        </div>
+      ) : <Content/>}
       
 
     </ContextTheme.Provider>

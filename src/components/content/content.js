@@ -1,10 +1,16 @@
 import { Section } from "./style";
 import { ContextTheme } from "../../context/context";
 import { useContext } from "react";
+import { Theme } from "../../theme/theme";
 
 export default function Content() {
 
-    const { country, datas } = useContext(ContextTheme);
+    const { country, datas, theme } = useContext(ContextTheme);
+
+    const themeLight = Theme.light;
+    const themeDark = Theme.dark;
+    const currentBackground = theme ? themeDark : themeLight;
+    const oppositeBackground = !theme ? themeDark : themeLight;
 
     const nameCountry = datas[country].nome.abreviado;
     const areaCountry = datas[country].area.total;
@@ -15,9 +21,13 @@ export default function Content() {
     const history = datas[country].historico;
 
     return (
-        <Section>
+        <Section style={{
+            backgroundColor: `${currentBackground.background}`
+        }}>
             <div className="center">
-                <div className="container">
+                <div className="container" style={{
+                    color: `${currentBackground.color}`
+                }}>
                     <p><strong>Nome do país: </strong>{nameCountry}</p>
                     <p><strong>Área do país: </strong>{areaCountry} {areaSymbol}</p>
                     <p><strong>Localização do país: </strong>{locationCountry}</p>

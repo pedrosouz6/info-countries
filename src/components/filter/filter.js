@@ -35,13 +35,7 @@ export default function Filter() {
                                 <option key={index} value={index}>{item.nome.abreviado}</option>
                             ))}
                         </select>
-
-                        <button 
-                        style={{
-                            backgroundColor: `${oppositeBackground.background}`,
-                            color: `${oppositeBackground.color}`
-                        }}>Buscar</button>
-
+                        
                     </form>
                 </div>
             </div>

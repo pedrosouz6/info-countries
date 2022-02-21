@@ -2,14 +2,14 @@ import Style from "styled-components";
 
 export const Footer = Style.footer `
     width: 100%;
-    height: 70px;
+    height: 60px;
     position: fixed;
     bottom: 0;
     transition: .3s ease-in-out; 
 
     .container {
         width: 100%;
-        height: 70px;
+        height: 60px;
         display: flex;
         justify-content: space-between;
         align-items: center;

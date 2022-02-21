@@ -31,6 +31,7 @@ export default function App() {
     }}>
 
       <Header/>
+      
       <Filter/>
       {country == 'null' || country < 0 ? (
         <div className="center">

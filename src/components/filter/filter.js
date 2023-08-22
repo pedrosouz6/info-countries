@@ -7,6 +7,7 @@ export default function Filter() {
 
     const { theme, datas, setCountry } = useContext(ContextTheme);
 
+    console.log(datas)
     //Themes
     const themeLight = Theme.light;
     const themeDark = Theme.dark;

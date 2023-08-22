@@ -13,7 +13,7 @@ export default function App() {
   const [ country, setCountry ] = useState('null');
 
   useEffect(() => {
-    fetch("https://servicodados.ibge.gov.br/api/v1/paises")
+    fetch("https://servicodados.ibge.gov.br/api/v1/paises/all")
     .then(response => response.json())
     .then(data => setDatas(data))
     .catch(err => {

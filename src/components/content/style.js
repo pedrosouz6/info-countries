@@ -20,6 +20,7 @@ export const Section = Style.section `
     }
 
     .history p {
-        text-indent: 30px;
+        text-indent: 15px;
+        overflow: auto;
     }
 `

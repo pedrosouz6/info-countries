@@ -2,10 +2,11 @@ import Style from "styled-components";
 
 export const Footer = Style.footer `
     width: 100%;
-    height: 60px;
+    min-height: 60px;
     position: fixed;
     bottom: 0;
-    transition: .3s ease-in-out; 
+    transition: .3s ease-in-out;     
+    padding: 10px;
 
     .container {
         width: 100%;
@@ -13,6 +14,10 @@ export const Footer = Style.footer `
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
     }
 
     p {
